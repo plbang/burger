@@ -1,7 +1,7 @@
 {
   "name": "burger",
   "version": "1.0.0",
-  "description": "",
+  "description": "Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -23,5 +23,6 @@
     "express-handlebars": "^3.0.0",
     "mysql": "^2.16.0",
     "nodemon": "^1.18.7"
-  }
+  },
+  "devDependencies": {}
 }
