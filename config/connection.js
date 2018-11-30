@@ -1,3 +1,4 @@
+// Dependencies
 var mysql = require("mysql");
 
 var connection = mysql.createConnection({
@@ -17,4 +18,5 @@ connection.connect(function(err) {
     console.log('connected as id ' + connection.threadId);
   });
 
-  module.exports = connection;
+// Export connection for use in ORM
+module.exports = connection;

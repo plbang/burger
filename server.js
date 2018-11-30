@@ -15,10 +15,11 @@ app.use(express.json());
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
+// Load and import the router module
 var routes = require("./controllers/burgers_controller.js");
 
 app.use(routes);
 
 app.listen(PORT, function() {
-  console.log("Listening on port:%s", PORT);
+  console.log("Listening on port: " + PORT);
 });
